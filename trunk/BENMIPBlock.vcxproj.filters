@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\examples\BENMILPBlock\BENMIP_BendersCut.cpp">
+      <Filter>Benders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\examples\BENMILPBlock\BENMIP_DecompApp.cpp" />
+    <ClCompile Include="..\..\..\..\examples\BENMILPBlock\BENMIP_Main.cpp" />
+    <ClCompile Include="..\..\..\..\examples\BENMILPBlock\BENMIP_MixedConstraints.cpp" />
+    <ClCompile Include="..\..\..\..\examples\BENMILPBlock\BENMIP_Subproblem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_BendersCut.h">
+      <Filter>Benders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_DecompApp.h" />
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_Param.h" />
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_Utilities.h">
+      <Filter>Benders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_MixedConstraints.h" />
+    <ClInclude Include="..\..\..\..\examples\BENMILPBlock\BENMIP_Subproblem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Benders">
+      <UniqueIdentifier>{8400064e-11c8-4e11-8453-c0f47ee61610}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BENMIP.parm" />
+    <None Include="test_small.lp" />
+    <None Include="test_small_2" />
+    <None Include="test_small_3.lp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="rays.txt" />
+  </ItemGroup>
+</Project>

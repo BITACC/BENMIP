@@ -1,0 +1,41 @@
+#===========================================================================#
+# This file is part of the Decomp Solver Framework.                         #
+#                                                                           #
+# Decomp is distributed under the Common Public License as part of the      #
+# COIN-OR repository (http://www.coin-or.org).                              #
+#                                                                           #
+# Author: Matthew Galati, SAS Institute Inc. (matthew.galati@sas.com)       #
+#                                                                           #
+# Copyright (C) 2002-2015, Lehigh University, Matthew Galati, and Ted Ralphs#
+# All Rights Reserved.                                                      #
+#===========================================================================#
+
+###########################################################################
+# CHANGEME: Put the name of your executable here
+###########################################################################
+
+EXE = decomp_bender@EXEEXT@
+
+###########################################################################
+# CHANGEME: Put the names of source files here
+###########################################################################
+
+OBJS         = BENMIP_DecompApp.@OBJEXT@
+OBJS        += BENMIP_BendersCut.@OBJEXT@
+OBJS        += BENMIP_MixedConstraints.@OBJEXT@
+OBJS        += BENMIP_Main.@OBJEXT@
+
+###########################################################################
+# CHANGEME: Put the directories to find the source files here
+###########################################################################
+
+SRCDIR = @srcdir@
+VPATH = @srcdir@
+BUILDDIR = @abs_top_builddir@
+
+###########################################################################
+# include default COIN flags, library options, and targets
+###########################################################################
+
+include ../Makefile.Examples
+
